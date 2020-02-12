@@ -25,12 +25,12 @@ docker-compose exec app php artisan config:cache
 ```
 
 While trying to connect to MySQL database, two issues might come up:
-a. [Using Docker I get the error: “SQLSTATE[HY000] [2002] No such file or directory”](https://stackoverflow.com/questions/40075065/using-docker-i-get-the-error-sqlstatehy000-2002-no-such-file-or-directory)
-b. [Laravel SQLSTATE[HY000] [2002] Connection refused
+- [Using Docker I get the error: “SQLSTATE[HY000] [2002] No such file or directory”](https://stackoverflow.com/questions/40075065/using-docker-i-get-the-error-sqlstatehy000-2002-no-such-file-or-directory)
+- [Laravel SQLSTATE[HY000] [2002] Connection refused
 ](https://stackoverflow.com/questions/41225720/laravel-sqlstatehy000-2002-connection-refused)
 
 Source: 
-1. [How To Set Up Laravel, Nginx, and MySQL with Docker Compose
+- [How To Set Up Laravel, Nginx, and MySQL with Docker Compose
 ](https://www.digitalocean.com/community/tutorials/how-to-set-up-laravel-nginx-and-mysql-with-docker-compose)
-2. [E: Package 'mysql-client' has no installation candidate in php-fpm image build using docker compose
+- [E: Package 'mysql-client' has no installation candidate in php-fpm image build using docker compose
 ](https://stackoverflow.com/questions/57048428/e-package-mysql-client-has-no-installation-candidate-in-php-fpm-image-build-u)
