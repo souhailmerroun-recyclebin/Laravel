@@ -24,6 +24,11 @@ docker-compose exec app php artisan key:generate
 docker-compose exec app php artisan config:cache
 ```
 
+4/
+```
+docker-compose exec app ./vendor/bin/phpunit
+```
+
 While trying to connect to MySQL database, two issues might come up:
 - [Using Docker I get the error: “SQLSTATE[HY000] [2002] No such file or directory”](https://stackoverflow.com/questions/40075065/using-docker-i-get-the-error-sqlstatehy000-2002-no-such-file-or-directory)
 - [Laravel SQLSTATE[HY000] [2002] Connection refused
