@@ -18,7 +18,7 @@ docker-compose build
 docker-compose up
 ```
 
-4/
+If there are no .env, clone .env.example, run these commands then rebuild docker-compose and run it
 ```
 docker-compose exec app php artisan key:generate
 docker-compose exec app php artisan config:cache
