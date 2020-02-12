@@ -15,7 +15,7 @@ Warning for Powershell, use: `"$(pwd):/app"`
 3/
 ```
 docker-compose build
-docker-compose run
+docker-compose up
 ```
 
 4/
