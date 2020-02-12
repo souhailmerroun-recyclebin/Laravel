@@ -14,14 +14,14 @@ Warning for Powershell, use: `"$(pwd):/app"`
 
 3/
 ```
-docker-compose exec app php artisan key:generate
-docker-compose exec app php artisan config:cache
+docker-compose build
+docker-compose run
 ```
 
 4/
 ```
-docker-compose build
-docker-compose run
+docker-compose exec app php artisan key:generate
+docker-compose exec app php artisan config:cache
 ```
 
 Source: 
