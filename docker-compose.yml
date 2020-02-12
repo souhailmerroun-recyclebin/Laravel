@@ -18,7 +18,7 @@ services:
       - ./:/var/www
       - ./php/local.ini:/usr/local/etc/php/conf.d/local.ini
     env_file:
-    - .env
+      - .env
     networks:
       - app-network
 
@@ -60,6 +60,7 @@ services:
 networks:
   app-network:
     driver: bridge
+   
 #Volumes
 volumes:
   dbdata:
