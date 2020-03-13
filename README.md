@@ -7,10 +7,12 @@ git clone this repo
 
 2/
 ```
-docker run --rm -v $(pwd):/app composer create-project --prefer-dist laravel/laravel .
+docker run --rm -v $(pwd):/app composer create-project --prefer-dist laravel/laravel laravel
 ```
 
 Warning for Powershell, use: `"$(pwd):/app"`
+
+After installation, you can copy the content of laravel to .
 
 3/
 ```
@@ -21,7 +23,6 @@ docker-compose up
 If there are no .env, clone .env.example, run these commands then rebuild docker-compose and run it
 ```
 docker-compose exec app php artisan key:generate
-docker-compose exec app php artisan config:cache
 ```
 
 4/
