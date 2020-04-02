@@ -20,16 +20,32 @@ docker-compose build
 docker-compose up
 ```
 
+4/ 
 If there are no .env, clone .env.example, run these commands then rebuild docker-compose and run it
 ```
 docker-compose exec app php artisan key:generate
 ```
 
-4/
+5/
+Normally, the Laravel app should be running on localhost and a MySQL connexion is should be available at 
+```
+DB_CONNECTION=mysql
+DB_HOST=db
+DB_PORT=3306
+DB_DATABASE=mydatabase
+DB_USERNAME=root
+DB_PASSWORD=mypassword
+```
+
+To understand DB_HOST, checking the common issues down below. 
+
+5/
+To run phpunit:
 ```
 docker-compose exec app ./vendor/bin/phpunit
 ```
 
+Common Issues:
 While trying to connect to MySQL database, two issues might come up:
 - [Using Docker I get the error: “SQLSTATE[HY000] [2002] No such file or directory”](https://stackoverflow.com/questions/40075065/using-docker-i-get-the-error-sqlstatehy000-2002-no-such-file-or-directory)
 - [Laravel SQLSTATE[HY000] [2002] Connection refused
