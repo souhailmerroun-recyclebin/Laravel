@@ -26,7 +26,7 @@ If there are no .env, clone .env.example, run these commands then rebuild docker
 docker-compose exec app php artisan key:generate
 ```
 
-5/
+6/
 Normally, the Laravel app should be running on localhost and a MySQL connexion is should be available at 
 ```
 DB_CONNECTION=mysql
