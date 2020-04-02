@@ -38,6 +38,10 @@ DB_PASSWORD=mypassword
 ```
 
 To understand DB_HOST, checking the common issues down below. 
+You should be able to run the migrations to test the db connexion with MySQL. 
+```
+docker-compose exec app php artisan migrate
+```
 
 5/
 To run phpunit:
