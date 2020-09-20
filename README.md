@@ -2,7 +2,7 @@
 
 1/
 ```
-git clone this repo
+git clone https://github.com/souhailmerroun/laravel-with-docker.git
 ```
 
 2/
@@ -10,17 +10,21 @@ git clone this repo
 docker run --rm -v $(pwd):/app composer create-project --prefer-dist laravel/laravel laravel
 ```
 
-Warning for Powershell, use: `"$(pwd):/app"`
-
-After installation, you can copy the content of laravel to .
+PowerShell Windows 10
+```
+docker run --rm -v "$(pwd):/app" composer create-project --prefer-dist laravel/laravel laravel
+```
 
 3/
+Move the content of the ``laravel` folder into the root `./`
+
+4/
 ```
 docker-compose build
 docker-compose up
 ```
 
-4/ 
+5/ 
 If there are no .env, clone .env.example, run these commands then rebuild docker-compose and run it
 ```
 docker-compose exec app php artisan key:generate
@@ -43,7 +47,7 @@ You should be able to run the migrations to test the db connexion with MySQL.
 docker-compose exec app php artisan migrate
 ```
 
-5/
+7/
 To run phpunit:
 ```
 docker-compose exec app ./vendor/bin/phpunit
