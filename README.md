@@ -23,7 +23,7 @@ docker-compose up
 ```
 
 5/ 
-If there are no .env, clone .env.example, run these commands then rebuild docker-compose and run it
+If there are no ```.env```, clone ```.env.example```, run these commands then rebuild docker-compose and run it
 ```
 docker-compose exec app php artisan key:generate
 ```
