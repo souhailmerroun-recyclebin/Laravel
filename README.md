@@ -60,5 +60,8 @@ While trying to connect to MySQL database, two issues might come up:
 Source: 
 - [How To Set Up Laravel, Nginx, and MySQL with Docker Compose
 ](https://www.digitalocean.com/community/tutorials/how-to-set-up-laravel-nginx-and-mysql-with-docker-compose)
+- [How To Install and Set Up Laravel with Docker Compose on Ubuntu 20.04
+](https://www.digitalocean.com/community/tutorials/how-to-install-and-set-up-laravel-with-docker-compose-on-ubuntu-20-04)
+
 - [E: Package 'mysql-client' has no installation candidate in php-fpm image build using docker compose
 ](https://stackoverflow.com/questions/57048428/e-package-mysql-client-has-no-installation-candidate-in-php-fpm-image-build-u)
