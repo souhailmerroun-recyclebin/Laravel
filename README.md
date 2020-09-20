@@ -14,7 +14,7 @@ docker run --rm -v "$(pwd):/app" composer create-project --prefer-dist laravel/l
 ```
 
 3/
-Move the content of the ``laravel` folder into the root `./`
+Move the content of the ```laravel``` folder into the root ```./```
 
 4/
 ```
