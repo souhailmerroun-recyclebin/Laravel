@@ -8,11 +8,7 @@ git clone https://github.com/souhailmerroun/laravel-with-docker.git
 2/
 ```
 docker run --rm -v $(pwd):/app composer create-project --prefer-dist laravel/laravel laravel
-```
-
-PowerShell Windows 10
-```
-docker run --rm -v "$(pwd):/app" composer create-project --prefer-dist laravel/laravel laravel
+docker run --rm -v "$(pwd):/app" composer create-project --prefer-dist laravel/laravel laravel //PowerShell Windows 10
 ```
 
 3/
